@@ -35,21 +35,22 @@
                 <div class="text-sm font-semibold text-slate-400 bg-slate-100 px-4 py-2 rounded-xl">📅 <?php echo e(date('d M Y')); ?></div>
             </div>
 
-            <!-- Widgets -->
+            <!-- Widgets BARU -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
                 <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl border border-blue-200 shadow-sm">
                     <div class="flex justify-between items-center mb-3"><span class="text-sm font-bold text-blue-800 uppercase">Kendaraan Aktif</span><span class="text-2xl">🚗</span></div>
-                    <div class="text-3xl font-black text-blue-900">120 <span class="text-sm font-normal text-blue-600">Unit</span></div>
+                    <div class="text-3xl font-black text-blue-900"><?php echo e($kendaraan_aktif); ?> <span class="text-sm font-normal text-blue-600">Unit</span></div>
                 </div>
                 <div class="bg-gradient-to-br from-emerald-50 to-emerald-100 p-6 rounded-2xl border border-emerald-200 shadow-sm">
                     <div class="flex justify-between items-center mb-3"><span class="text-sm font-bold text-emerald-800 uppercase">Slot Tersedia</span><span class="text-2xl">🔲</span></div>
-                    <div class="text-3xl font-black text-emerald-900">65 <span class="text-sm font-normal text-emerald-600">Slot</span></div>
+                    <div class="text-3xl font-black text-emerald-900"><?php echo e($slot_tersedia); ?> <span class="text-sm font-normal text-emerald-600">Slot</span></div>
                 </div>
                 <div class="bg-gradient-to-br from-violet-50 to-violet-100 p-6 rounded-2xl border border-violet-200 shadow-sm">
                     <div class="flex justify-between items-center mb-3"><span class="text-sm font-bold text-violet-800 uppercase">Pendapatan Hari Ini</span><span class="text-2xl">💰</span></div>
-                    <div class="text-3xl font-black text-violet-900">Rp 345.000</div>
+                    <div class="text-3xl font-black text-violet-900">Rp <?php echo e(number_format($pendapatan_hari_ini, 0, ',', '.')); ?></div>
                 </div>
             </div>
+
 
             <!-- Menus -->
             <div class="space-y-10">

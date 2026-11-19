@@ -13,10 +13,16 @@
     <!-- Card Login Putih -->
     <div class="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-md border border-slate-200">
         <!-- Header -->
-        <div class="text-center mb-8">
-            <h2 class="text-3xl font-extrabold text-slate-800">E-Parkir XII</h2>
-            <p class="text-slate-500 mt-2 text-sm">Silakan masuk untuk mengelola sistem parkir</p>
-        </div>
+        <div class="text-center mb-8 flex flex-col items-center">
+            <!-- 🅿️ LOGO PARKIR DIATAS & LEBIH BESAR -->
+            <div class="text-5xl mb-3 dropshadow-sm select-none">
+                🅿️
+            </div>
+    
+    <h2 class="text-3xl font-extrabold text-slate-800">E-Parkir XII</h2>
+    <p class="text-slate-500 mt-2 text-sm">Silakan masuk untuk mengelola sistem parkir</p>
+</div>
+
 
         <!-- Notifikasi Error jika Gagal -->
         <?php if(session('error')): ?>
